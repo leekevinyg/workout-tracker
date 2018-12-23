@@ -5,8 +5,4 @@ const Footer = styled.div`
     margin: auto;
 `;
 
-Footer.defaultProps = {
-    primary: true,
-}
-
 export default Footer;
