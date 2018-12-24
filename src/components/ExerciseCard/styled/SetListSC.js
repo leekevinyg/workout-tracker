@@ -5,7 +5,7 @@ const SetList = styled.ul`
     color: #ACA4A6;
     padding: 0;
     text-align: center;
-    overflow: scroll;
+    overflow: hidden;
     height: 200px;
 `;
 

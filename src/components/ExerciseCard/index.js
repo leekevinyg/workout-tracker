@@ -6,6 +6,7 @@ import SetListSC from './styled/SetListSC';
 import SetListItemSC from './styled/SetListItemSC';
 import FooterSC from './styled/FooterSC';
 import Button from './Button';
+import BenchPressIcon from './assets/benchpress.png';
 
 const MAX_SETS = 7;
 
@@ -44,7 +45,7 @@ class ExerciseCard extends Component {
     }
 
     renderEmptyState () {
-        return <img style={{width: '200px'}} src='http://i63.tinypic.com/jg4ck4.png'/>
+        return <img style={{width: '150px'}} src={BenchPressIcon} />
     }
 
     render() {
@@ -55,7 +56,7 @@ class ExerciseCard extends Component {
         return (
             <WrapperSC>
                 <TitleSC>
-                    Bicep Curl
+                    Bench Press
                 </TitleSC>
                 <SetListSC>
                     {setsLogged ? this.renderSets() : this.renderEmptyState()}
